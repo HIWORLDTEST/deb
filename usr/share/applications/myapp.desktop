@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=MyApp
+Comment=Моё консольное приложение
+Exec=gnome-terminal -- bash -c "/usr/bin/myapp; exec bash"
+Icon=myapp
+Terminal=true
+Categories=Utility;

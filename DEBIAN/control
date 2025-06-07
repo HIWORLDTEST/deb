@@ -1,0 +1,7 @@
+Package: myapp
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: mrsiz0znchik@mail.ru
+Description: Консольное приложение с плагинами для шифрования.

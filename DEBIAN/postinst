@@ -1,0 +1,9 @@
+#!/bin/sh
+USER_HOME=$(getent passwd $(logname) | cut -d: -f6)
+if [ -d "$USER_HOME/Рабочий стол" ]; then
+    cp /usr/share/applications/myapp.desktop "$USER_HOME/Рабочий стол/"
+    chmod +x "$USER_HOME/Рабочий стол/myapp.desktop"
+elif [ -d "$USER_HOME/Desktop" ]; then
+    cp /usr/share/applications/myapp.desktop "$USER_HOME/Desktop/"
+    chmod +x "$USER_HOME/Desktop/myapp.desktop"
+fi
